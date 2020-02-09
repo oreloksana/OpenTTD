@@ -819,7 +819,7 @@ static void DispatchHoverEvent(Window *w, int x, int y)
 	/* Show the tooltip if there is any */
 	if (!w->OnTooltip(pt, wid->index, TCC_HOVER) && wid->tool_tip != 0) {
 		GuiShowTooltips(w, wid->tool_tip);
-		return;
+		// return;
 	}
 
 	/* Widget has no index, so the window is not interested in it. */
